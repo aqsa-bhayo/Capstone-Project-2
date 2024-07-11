@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capstone Project 2</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bb1cd9d498.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="shown">
+    <div class="logo">
+      <img src="./imgs/logo_300x.avif" alt="BleBee">
+    </div>
+    <nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <iconify-icon icon="mingcute:menu-fill" noobserver></iconify-icon>
+      </label>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#" class="fw-bold">Home</a>
+          <div class="dropdown-content">
+            <div class="d-flex">
+              <div class="dropdown-section-1">
+                <a href="./index.html">Home Page 01</a>
+                <a href="#">Home Page 02</a>
+                <a href="#">Home Page 03</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="fw-bold">Shop</a>
+          <div class="dropdown-content">
+            <div class="d-flex">
+              <div class="dropdown-section-2">
+                <h4 class="mb-4">Shop Layout</h4>
+                <a href="#">Left Sidebar</a>
+                <a href="#">Right Sidebar</a>
+                <a href="#">Full Width</a>
+                <a href="./Pages/list-view/list-view.html">List View</a>
+              </div>
+              <div class="dropdown-section-2">
+                <h4 class="mb-4">Shop Pages</h4>
+                <a href="#">Categories</a>
+                <a href="">My Account</a>
+                <a href="#">Wishlist</a>
+                <a href="#">About Us</a>
+              </div>
+              <div class="dropdown-section-2">
+                <h4 class="mb-4">Product Types</h4>
+                <a href="#">Simple Product</a>
+                <a href="#">Left Sidebar</a>
+                <a href="#">Right Sidebar</a>
+                <a href="#">Variable Product</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="fw-bold">Pages</a>
+          <div class="dropdown-content">
+            <div class="d-flex">
+              <div class="dropdown-section-3">
+                <a href="./Pages/page/about-us.html">About Us</a>
+                <a href="#">Frequently Questions</a>
+                <a href="#">Error 404</a>
+                <a href="#">Your Cart</a>
+              </div>
+
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="fw-bold">Blog</a>
+          <div class="dropdown-content">
+            <div class="d-flex">
+              <div class="dropdown-section-4">
+                <h4 class="mb-4">Blog Layouts</h4>
+                <a href="#">Grid Layout</a>
+                <a href="./Pages/blog/list-layout.html">list Layout</a>
+                <a href="#">No Sidebar</a>
+                <a href="#">Left Sidebar</a>
+                <a href="#">Right Sidebar</a>
+              </div>
+              <div class="dropdown-section-4">
+                <h4 class="mb-4">Post Formats</h4>
+                <a href="#">Blog Image Post</a>
+                <a href="#">Post With Gallery</a>
+                <a href="#">Post With Audio</a>
+                <a href="#">Post With Video</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#" class="fw-bold">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="icons d-flex" style="margin-right: 30px;">
+      <div class=" icon-site mt-2">
+        <a href=""><iconify-icon icon="material-symbols-light:search"></iconify-icon></a>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div class="fs-2">
+          <iconify-icon icon="mdi-light:cart"></iconify-icon>
+
+          
+        </div>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <span class="fs-5">Your Cart is empty.</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- login -->
+      <div class=" icon-site mt-2">
+        <a href="./Pages/login/login.html"><iconify-icon icon="iconamoon:profile-thin"></iconify-icon></a>
+      </div>
+
+      <!-- seting -->
+      <div class=" icon-site-2 mt-3">
+        <a href="./Pages/login/login.html"><iconify-icon icon="weui:setting-outlined"></iconify-icon></a>
+        
+      </div>
+    </div>
+  </header>
+
+  
+  <header class="hidden">
+    <button class="btn fs-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+      aria-controls="offcanvasScrolling">
+      <iconify-icon icon="material-symbols:menu"></iconify-icon></button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body list-unstyled">
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Pages</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </div>
+    </div>
+  </header>
+
+  
+  <div style="background-color: #f3f3f3;">
+    <div class="image-text">
+      <img src="./imgs/hero-img.webp" alt="Your Image">
+      <div class="overlay container pt-5">
+        <h1>Honey Yoghurt</h1>
+        <span>Hot Trending</span>
+        <p>Maecenas varius urna et diam ultrices luctus. Sed lobortis, nulla viverra hendrerit <br> auctor, ipsum
+          est
+          feugiat nisi, eget bibendum arcu orci ac risus. Ut egestas vitae <br> lectus eu pretium.</p>
+        <button class="btn-buy">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2nd hero-menu -->
+
+
+  <div id="shopify-section-1559897898915" class="shopify-section index-section section-img-about">
+    <div class=" type_1">
+      <div class="distance" style="padding-top: 30px; padding-bottom: 30px">
+
+        <div class="container">
+
+          <div class="block">
+
+            <div class="title_block text-center">
+
+              <span class="sub_title">Welcome to</span>
+
+              <span>Our Natural Honey</span>
+            </div>
+
+            <div class="row ">
+
+              <div class="bd-content col-lg-5 col-md-12 col-xs-12 wow slideInLeft item animated" data-wow-delay="0.2s">
+
+                <div class="box-content">
+                  <div class="number-content">01</div>
+                  <div class="content-about">
+                    <div class="title_about">Naturally Sweet</div>
+                    <div class="des_about">
+                      <p>Nullam molestie augue neque, vel lobortis <br> ante ornare in. Aenean ultricies elementum
+                        <br>
+                        augue, sit
+                        amet ornare lacus lacinia non.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-content">
+                  <div class="number-content">02</div>
+                  <div class="content-about">
+                    <div class="title_about">Good for health</div>
+                    <div class="des_about">
+                      <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Duis quis tortor dictum est
+                        <br>
+                        pulvinar
+                        placerat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-content">
+                  <div class="number-content">03</div>
+                  <div class="content-about">
+                    <div class="title_about">No preservatives</div>
+                    <div class="des_about">
+                      <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Duis quis tortor dictum est
+                        <br>
+                        pulvinar
+                        placerat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-7 col-md-12 col-xs-12 wow slideInRight item animated" data-wow-delay="0.2s">
+                <img style="max-width: 100%; border: 0;" src="./imgs/honey-menu-img.webp" alt="image">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 3rd hero menu -->
+
+  <div id="shopify-section-1557803366997" class="shopify-section index-section section-policy">
+    <div class="distance" style="padding-top: 130px; padding-bottom: 180px">
+      <div id="section-policy-1557803366997" class="page-width" data-section-id="1557803366997">
+        <div class="container">
+          <div class="bg-policy">
+          </div>
+          <div class="nov-policy">
+            <div class="align-items row spacing-30">
+              <div class="nov-policy-item col-lg-4 col-md-4 col-xs-12 layout1 wow fadeInDown animated">
+                <div class="block_content">
+                  <div class="content-policy">
+                    <div class="policy-icon">
+                      <img src="./imgs/logo-2.avif" alt="icon_policy">
+                    </div>
+                    <div class="policy-info">
+                      <div class="title-policy">Shipping Fast & Free Delivery</div>
+                      <div class="desc-policy">Nam liber tempor cum soluta nobiseleifend option <br> congue.</div>
+                    </div>
+                  </div>
+                  <div class="number-content">01</div>
+                </div>
+              </div>
+              <div class="nov-policy-item col-lg-4 col-md-4 col-xs-12 layout1 wow fadeInDown animated">
+                <div class="block_content">
+                  <div class="content-policy">
+                    <div class="policy-icon">
+                      <img src="./imgs/logo-3.avif" alt="icon_policy">
+                    </div>
+                    <div class="policy-info">
+                      <div class="title-policy">Money Back & Guarantee</div>
+                      <div class="desc-policy">Claritas est etiam processus dynamicus, sequitur mutationem</div>
+                    </div>
+                  </div>
+                  <div class="number-content">02</div>
+                </div>
+              </div>
+              <div class="nov-policy-item col-lg-4 col-md-4 col-xs-12 layout1 wow fadeInDown animated">
+                <div class="block_content">
+                  <div class="content-policy">
+                    <div class="policy-icon">
+                      <img src="./imgs/logo-4.avif" alt="icon_policy">
+                    </div>
+                    <div class="policy-info">
+                      <div class="title-policy">Online Support 24/7</div>
+                      <div class="desc-policy">Nam liber tempor cum soluta nobiseleifend option<br> congue.</div>
+                    </div>
+                  </div>
+                  <div class="number-content">03</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4th section -->
+  <div class="container">
+    <div>
+      <h2 class="text-center heading-4th">Our Store</h2>
+      <h3 class="text-center mb-4" style="font-size: 38px; font-weight: bolder;">Featured Products</h3>
+    </div>
+    <div class="row mt-5">
+      <div class="col-sm-6 col-md-3">
+        <div class="product">
+          <div class="discount-badge">-50%</div>
+          <img src="./imgs/paoin-honey.webp" class="img-fluid" alt="Eucalyptus Honey">
+          <h5 class="mt-2">Proin nulla dui</h5>
+          <p class="price">$140.00 <span class="old-price">$280.00</span></p>
+
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="product">
+          <img src="./imgs/pallentesque-honey.webp" class="img-fluid" alt="Organic Honey">
+          <h5 class="mt-2">Pellentesque lacinia</h5>
+          <p class="price">$120.00</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="product">
+          <div class="discount-badge">-50%</div>
+          <img src="./imgs/orara -honey.webp" class="img-fluid" alt="Orara Valley Honey">
+          <h5 class="mt-2">Orara Valley Honey</h5>
+          <p class="price">$110.00 <span class="old-price">$220.00</span></p>
+
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="product">
+          <div class="discount-badge">-50%</div>
+          <img src="./imgs/aenean-honey.webp" class="img-fluid" alt="Lip Smackin Good Honey">
+          <h5 class="mt-2">Aenean commodo</h5>
+          <p class="price">$150.00 <span class="old-price">$300.00</span></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5th section -->
+
+
+  <div class="shopify-section index-section section-img-about" style="margin-top: 200px;">
+    <div class=" type_2">
+      <div class="distance" style="padding-top: 30px; padding-bottom: 10px">
+        <div class="container">
+          <div class="block">
+            <div class="title_block text-center">
+              <span class="sub_title">Natural Honey</span>
+              <span>Why Choose Us</span>
+            </div>
+            <div class="row  flex-row-reverse">
+              <div class="bd-content col-lg-4 col-md-12 col-xs-12 wow slideInRight item animated" data-wow-delay="0.2s">
+                <div class="box-content">
+                  <div class="about-icon">
+                    <img src="./imgs/logo-5.avif" alt="icon_about">
+                  </div>
+                  <div class="content-about">
+                    <div class="title_about">100% Naturally</div>
+                    <div class="des_about">
+                      <p>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-content">
+                  <div class="about-icon">
+                    <img src="./imgs/logo-6.avif" alt="icon_about">
+                  </div>
+                  <div class="content-about">
+                    <div class="title_about">Sell online 24/7</div>
+                    <div class="des_about">
+                      <p>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-content">
+                  <div class="about-icon">
+                    <img src="./imgs/logo-7.avif" alt="icon_about">
+                  </div>
+                  <div class="content-about">
+                    <div class="title_about">Deliver To Home</div>
+                    <div class="des_about">
+                      <p>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-content">
+                  <div class="about-icon">
+                    <img src="./imgs/logo-8.avif" alt="icon_about">
+                  </div>
+                  <div class="content-about">
+                    <div class="title_about">Best Quality in the Market</div>
+                    <div class="des_about">
+                      <p>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 col-xs-12 wow slideInLeft item animated" data-wow-delay="0.2s">
+                <img width="100%" src="./imgs/all-honies.webp" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6th section -->
+
+
+  <div id="shopify-section-1559982284763" class="shopify-section index-section section-testimonials">
+    <div class="distance" style="padding-top: 130px; padding-bottom: 30px">
+      <div class="testimonial">
+        <div>
+          <div class="container">
+            <div class="block ">
+              <div class="testimonial-wrapper ">
+                <div class="testimonials-slider nov-owl-carousel owl-carousel">
+                  <div class="testimonial-slide ">
+                    <div class="testimonial-item text-center ">
+                      <img class="testimonial-item_avatar " style="position: relative; top: -120px;"
+                        src="./imgs/profile-img.png" alt="Businessman">
+                      <div class="content-info mt-xs-30 text-xs-center">
+                        <div class="testimonial-item__name"><strong>Simon Holmes</strong> - Businessman</div>
+                        <div class="testimonial-item__text">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eros libero,
+                            varius id
+                            sodales a,<br> convallis id sem. Morbi ipsum sem, vestibulum a sollicitudin accumsan,
+                            pulvinar
+                            eget ligula.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7th section -->
+  <div id="shopify-section-1559897241619" class="shopify-section index-section section-img-text">
+    <div class="distance" style="padding-top: 20px; padding-bottom: 0px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12 wow slideInLeft item animated" data-wow-delay="0.2s">
+            <div class="title_block" style="color: #222222">Our Story</div>
+            <div class="sub-title" style="color: #505050">“ Natural honey is a very good food for health. ”</div>
+            <div class="des" style="color: #505050">
+              <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum <br> laoreet est orci,
+                eu
+                placerat est posuere in. Sed malesuada magna vitae <br>pulvinar varius. Orci varius nato que
+                penatibus
+                et magnis dis parturient<br> montes, nascetur ridiculus mus. Integer vel nisi lorem. Donec
+                dignissim
+                non <br>est ut pulvinar. Duis lobortis metus in libero commodo rhon cus. Nullam a <br>nunc libero.
+                Donec non arcu arcu.</p>
+            </div>
+            <button class="button-text d-inline-block" style="color: #222222" href="#">Read More</button>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 wow zoomIn item animated" data-wow-delay="0.2s">
+            <img width="100%" src="//blebee-vinovatheme.myshopify.com/cdn/shop/files/4_850x.jpg?v=1613567959"
+              alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 8th section -->
+  <div class="container text-center my-5">
+    <h6>Newest</h6>
+    <h2>From Our Blog</h2>
+    <div class="row mt-5">
+      <div class="col-md-6 blog-post">
+        <img src="./imgs/honey-bee-1.webp" alt="Blog Image 1">
+        <div class="blog-post-meta">
+          <span><i class="far fa-calendar-alt" style="color: #fec827; font-size: 20px;"></i> July 15, 2019</span>
+          <span><i class="far fa-user" style="color: #fec827; font-size: 20px;"></i> Johny Nguyen</span>
+          <span class="read-more">Read More</span>
+        </div>
+        <hr>
+        <h5 class="blog-post-title mt-4">Although we worry, honey bees are built to last</h5>
+      </div>
+      <div class="col-md-6 blog-post">
+        <img src="./imgs/honey-bee-2.webp" alt="Blog Image 2">
+        <div class="blog-post-meta">
+          <span><i class="far fa-calendar-alt" style="color: #fec827; font-size: 20px;"></i> July 15, 2019</span>
+          <span><i class="far fa-user" style="color: #fec827; font-size: 20px;"></i> Johny Nguyen</span>
+          <span class="read-more">Read More</span>
+        </div>
+        <hr>
+        <h5 class="blog-post-title mt-4">Wintertime projects: skeps and honey pots</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9th section -->
+  <div id="shopify-section-nov-footer" class="shopify-section nov-footer footer-1">
+    <footer data-section-id="nov-footer">
+
+      <div class="newsletter">
+        <div class="container text-center">
+
+          <div class="title_block wow slideInLeft animated">
+            <span>Join Newsletter Now</span>
+
+            <div class="sub_title">Stay updated on sales, new items and more</div>
+
+          </div>
+
+          <div class="block-content w-100 wow slideInRight animated" data-wow-delay="0.2s">
+            <div class="site-footer__newsletter">
+              <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8"
+                class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden"
+                  name="utf8" value="✓" />
+
+
+                <div class="input-group mt-5">
+                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <input type="email" name="contact[email]" id="Email"
+                    class="input-group__field newsletter__input form-control pl-15" value=""
+                    placeholder="Your Email Address" autocorrect="off" autocapitalize="off">
+                </div>
+                <div class="input-group__btn">
+                  <button type="submit" class="btn newsletter__submit d-flex align-items-center" name="commit"
+                    id="Subscribe">
+                    <i class="icon-subscribe" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+  <!-- footer -->
+  <footer class="footer-2">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login Account</a></li>
+          <li><a href="#">My Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Checkout</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login Account</a></li>
+          <li><a href="#">My Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Checkout</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Address: 98/100 Shore Dr. Garden City</p>
+        <p>Phone: +65 11.188.888</p>
+        <p>Email: <a href="#" style="color: #222; text-decoration: none;">example@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer-3 -->
+
+  <div class="drip-header">
+
+    <div class="content">
+      <h1>BleBeè</h1>
+      <p class="footer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi <br> accumsan turpis
+        rhoncus
+        sapien gravida finibus.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tumblr"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+      </div>
+    </div>
+    <hr style="color: white;">
+
+    <div class="footer">
+      <p>Copyright @ 2019 Vinovathemes. All rights reserved</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseOne"
+          >
+            Cosmetics
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingOne"
+          style=""
+        >
+          <div class="accordion-body">
+            <li>BB Screams</li>
+            <li>Beauty</li>
+            <li>Make Up</li>
+            <li>Skin Care</li>
+            <li>Spa</li>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo"
+          >
+            Organics
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo"
+          style=""
+        >
+          <div class="accordion-body">
+            <li>Centuries</li>
+            <li>Unchanged</li>
+            <li>Dummy</li>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree"
+          >
+            Drinks
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingThree"
+        >
+          <li>Established</li>
+          <li>Discovered</li>
+        </div>
+      </div>
+    </div> -->
